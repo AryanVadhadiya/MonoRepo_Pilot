@@ -1,0 +1,25 @@
+{
+  "name": "repopilot-ai",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "repopilot": "dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli/index.ts",
+    "build": "tsup",
+    "demo:make": "tsx scripts/make-demo.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "commander": "^15.0.0",
+    "picocolors": "^1.1.1",
+    "typescript": "^5.9.3",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsup": "^9.0.0",
+    "tsx": "^4.23.15"
+  }
+}
